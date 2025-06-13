@@ -116,7 +116,7 @@ const storyData = {
         ],
         choices: [
             {
-                text: "Разработка функционала",
+                text: "Это честь для меня! Готов дать максимум!",
                 effects: { 
                     [STATS.EFFICIENCY]: 2, 
                     [STATS.LEADERSHIP]: 2 
@@ -125,7 +125,7 @@ const storyData = {
                 next: "road_to_hotel"
             },
             {
-                text: "Создание дизайна",
+                text: "Немного волнуюсь, но справлюсь!",
                 effects: { 
                     [STATS.LEADERSHIP]: 1, 
                     [STATS.PSYCHOLOGY]: -1 
@@ -134,7 +134,7 @@ const storyData = {
                 next: "road_to_hotel"
             },
             {
-                text: "Создание дизайна",
+                text: "А если что-то пойдет не так? Может, лучше кого опытнее?",
                 effects: { 
                     [STATS.LEADERSHIP]: -2, 
                     [STATS.EFFICIENCY]: -1 
@@ -143,7 +143,7 @@ const storyData = {
                 next: "road_to_hotel"
             },
             {
-                text: "Координация процессов",
+                text: "Отлично! Буду говорить 'Hello World' вместо 'Здравствуйте' - покажем международный уровень!",
                 effects: { 
                     [STATS.PSYCHOLOGY]: 1, 
                     [STATS.COLLECTIVE]: -2 
