@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Однажды в офисе</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <!-- Фон остается снаружи -->
+    <div id="background"></div>
+
+    <div id="game-container">
+        <!-- Внутренний контейнер для правильного позиционирования -->
+        <div id="game-inner">
+
+            <!-- Персонаж -->
+            <div id="character"></div>
+
+            <!-- Панель статистики -->
+            <div id="stats-panel">
+                <h3>ПАРАМЕТРЫ СТАЖЁРА</h3>
+                <div class="stats-grid">
+                    <div class="stat-card" data-stat="collective">
+                        <div class="stat-icon">
+                            <img src="images/ui/icon-user.png" alt="Коллектив">
+                        </div>
+                        <div class="stat-divider"></div>
+                        <div class="stat-content">
+                            <div class="stat-level" id="stat-collective-level">очередной стажер</div>
+                            <div class="stat-change-indicator" id="stat-collective-indicator"></div>
+                        </div>
+                    </div>
+
+                    <div class="stat-card" data-stat="psychology">
+                        <div class="stat-icon">
+                            <img src="images/ui/heart-rate.png" alt="Психология">
+                        </div>
+                        <div class="stat-divider"></div>
+                        <div class="stat-content">
+                            <div class="stat-level" id="stat-psychology-level">все нормально</div>
+                            <div class="stat-change-indicator" id="stat-psychology-indicator"></div>
+                        </div>
+                    </div>
+
+                    <div class="stat-card" data-stat="leadership">
+                        <div class="stat-icon">
+                            <img src="images/ui/trophy.png" alt="Руководство">
+                        </div>
+                        <div class="stat-divider"></div>
+                        <div class="stat-content">
+                            <div class="stat-level" id="stat-leadership-level">юный подаван</div>
+                            <div class="stat-change-indicator" id="stat-leadership-indicator"></div>
+                        </div>
+                    </div>
+
+                    <div class="stat-card" data-stat="efficiency">
+                        <div class="stat-icon">
+                            <img src="images/ui/bright-light-bulb.png" alt="Эффективность">
+                        </div>
+                        <div class="stat-divider"></div>
+                        <div class="stat-content">
+                            <div class="stat-level" id="stat-efficiency-level">начинающий профессионал</div>
+                            <div class="stat-change-indicator" id="stat-efficiency-indicator"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Кнопки управления -->
+            <div class="control-buttons">
+                <!-- <button class="control-btn" id="stats-toggle">Статистика</button> -->
+                <!-- <button class="control-btn" id="menu-button">Меню</button> -->
+                <button class="control-btn" id="restart-button">Начать заново</button>
+            </div>
+
+            <!-- Контейнер для диалогов и выборов -->
+            <div id="content-container">
+                <!-- Система диалогов -->
+                <div id="dialogue-system" style="display: none;">
+                    <div id="dialogue-box">
+                        <div class="glass-shine"></div>
+                        <div id="dialogue-text"></div>
+                    </div>
+                </div>
+
+                <!-- Контейнер для выборов -->
+                <div id="choices-container"></div>
+            </div>
+
+            <!-- Контейнер для мини-игр -->
+            <div id="minigame-container"></div>
+
+        </div> <!-- Конец game-inner -->
+    </div>
+
+    <!-- Подключение скриптов -->
+    <script src="js/story.js"></script>
+    <script src="js/save-system.js"></script>
+    <script src="js/dialogue-system.js"></script>
+    <script src="js/minigames.js"></script>
+    <script src="js/ui.js"></script>
+    <script src="js/game.js"></script>
+</body>
+
+</html>
